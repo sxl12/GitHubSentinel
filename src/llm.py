@@ -35,7 +35,7 @@ class LLM:
             response = self.client.chat.completions.create(
                 model=self.model,  # 指定使用的模型版本
                 messages=[
-                    {"role": "system", "content": system_prompt},
+                    {"role": "system", "content": system_prompt}, 
                     {"role": "user", "content": prompt}  # 提交用户角色的消息
                 ]
             )
