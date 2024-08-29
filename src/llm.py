@@ -5,7 +5,6 @@ from logger import LOG  # 导入日志模块
 class LLM:
     def __init__(self):
         # 创建一个OpenAI客户端实例
-        self.client = OpenAI()
         self.client =OpenAI(
             base_url="https://api.moonshot.cn/v1",
             api_key=os.environ.get("MOONSHOT_API_KEY")
